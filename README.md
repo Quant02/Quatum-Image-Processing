@@ -48,7 +48,7 @@ Denoising was performed by applying a QFT gate to the Statevector passed initial
 
 Edge detection was performed using QHED algorithm. The image is split into 8 x 8 chunks and each tile is passed through the edge detection module. Once all tiles are processed, they are stitched back together to form back the original dimensions of the image, consisting of the edges only.  
 
-##Future Goals
+## Future Goals
 
 We can extend the use of QPIE with QFT to the following
 - Image compression
