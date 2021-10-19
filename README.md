@@ -40,8 +40,10 @@ This is done by converting the 2D image matrix to a 1D array and normalising it.
 
 We tried implementing denoising and edge detection. 
 
+###Denoising
 Denoising was performed by applying a QFT gate to the Statevector passed initially. The frequency vector is measured and the higher frequency amplitudes are set to zero under the assumption that most of the noise resides in higher frequencies. The new Statevector is re-normalised and passed through an inverse QFT to retrieve the image.
 
+###Edge Detection
 Edge detection was performed using QHED algorithm. The image is split into 8 x 8 chunks and each tile is passed through the edge detection module. Once all tiles are processed, they are stitched back together to form back the original dimensions of the image, consisting of the edges only.  
 
 
